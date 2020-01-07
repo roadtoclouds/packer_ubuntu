@@ -1,12 +1,12 @@
 
 {
 	"variables": {
-		"output_path": "./output"
+		"output_path": "./output1"
 	},
   "builders": [
     {
       "communicator": "ssh",
-      "source_path": "hashicorp/precise64",
+      "source_path": "./output/vagrant/package.box",
       "provider": "virtualbox",
       "add_force": true,
       "type": "vagrant",
