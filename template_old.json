@@ -1,0 +1,22 @@
+
+{
+	"variables": {
+		"output_path": "./output"
+	},
+  "builders": [
+    {
+      "communicator": "ssh",
+      "source_path": "hashicorp/precise64",
+      "provider": "virtualbox",
+      "add_force": true,
+      "type": "vagrant",
+      "output_dir": "{{user `output_path`}}/vagrant"
+    }
+  ],
+  "provisioners": [
+    { "type": "shell",
+      "script": "test.sh"
+    }
+  ]
+}
+
