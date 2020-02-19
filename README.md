@@ -1,5 +1,6 @@
 # packer_ubuntu
 
+PACKER_LOG=1 packer build template_old.json
 PACKER_LOG=1 packer build template.json
 
 
